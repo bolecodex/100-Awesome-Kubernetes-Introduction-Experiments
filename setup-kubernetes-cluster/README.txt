@@ -2,6 +2,8 @@
 sudo -i
 git clone https://github.com/bolecodex/100-Awesome-Kubernetes-Introduction-Experiments.git
 cd 100-Awesome-Kubernetes-Introduction-Experiments/setup-kubernetes-cluster
+chmod +x setup-container.sh
+chmod +x setup-kubetools-ubuntu.sh
 ./setup-container.sh
 ./setup-kubetools-ubuntu.sh
 
