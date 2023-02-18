@@ -11,6 +11,7 @@ chmod +x setup-kubetools-ubuntu.sh
 kubeadm init
 
 # Copy te output and execute the "kubeadm join ..." command in work nodes
+# if the command is lost, you can create a new one with "kubeadm token create --print-join-command"
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
